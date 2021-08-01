@@ -25,3 +25,6 @@ INSERT INTO resources (title, description, position, img_Uri, type, offer_id) VA
 INSERT INTO sections (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 1', 'Neste capítulo vamos iniciar com tags básicas!', 1, 'https://blog.coursify.me/wp-content/uploads/2018/08/plan-your-online-course.jpg', 1, null);
 INSERT INTO sections (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 2', 'Vamos nos aprofundar em tags de formulário!', 2, 'https://blog.coursify.me/wp-content/uploads/2018/08/plan-your-online-course.jpg', 1, 1);
 INSERT INTO sections (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 3', 'Vamos aprender sobre meta tags!', 3, 'https://blog.coursify.me/wp-content/uploads/2018/08/plan-your-online-course.jpg', 1, 2);
+
+INSERT INTO enrollments (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (1, 1, TIMESTAMP WITHOUT TIME ZONE '2020-11-20T13:00:00Z', null, true, false);
+INSERT INTO enrollments (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (2, 1, TIMESTAMP WITHOUT TIME ZONE '2020-11-20T12:30:00Z', null, true, false);
