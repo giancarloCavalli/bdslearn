@@ -21,3 +21,7 @@ INSERT INTO offers (edition, start_Moment, end_Moment, course_id) VALUES ('2.0',
 INSERT INTO resources (title, description, position, img_Uri, type, offer_id) VALUES ('Trilha HTML', 'Trilha principal do curso', 1, 'https://blog.coursify.me/wp-content/uploads/2018/08/plan-your-online-course.jpg', 1, 1);
 INSERT INTO resources (title, description, position, img_Uri, type, offer_id) VALUES ('Forum', 'Tire suas dúvidas', 2, 'https://blog.coursify.me/wp-content/uploads/2018/08/plan-your-online-course.jpg', 2, 1);
 INSERT INTO resources (title, description, position, img_Uri, type, offer_id) VALUES ('Lives', 'Lives exclusivas para a turma', 3, 'https://blog.coursify.me/wp-content/uploads/2018/08/plan-your-online-course.jpg', 0, 1);
+
+INSERT INTO sections (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 1', 'Neste capítulo vamos iniciar com tags básicas!', 1, 'https://blog.coursify.me/wp-content/uploads/2018/08/plan-your-online-course.jpg', 1, null);
+INSERT INTO sections (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 2', 'Vamos nos aprofundar em tags de formulário!', 2, 'https://blog.coursify.me/wp-content/uploads/2018/08/plan-your-online-course.jpg', 1, 1);
+INSERT INTO sections (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 3', 'Vamos aprender sobre meta tags!', 3, 'https://blog.coursify.me/wp-content/uploads/2018/08/plan-your-online-course.jpg', 1, 2);
