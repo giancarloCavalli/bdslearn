@@ -17,3 +17,7 @@ INSERT INTO courses (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp HTML', 'http
 
 INSERT INTO offers (edition, start_Moment, end_Moment, course_id) VALUES ('1.0', TIMESTAMP WITHOUT TIME ZONE '2020-11-20T03:00:00Z', TIMESTAMP WITHOUT TIME ZONE '2021-11-20T03:00:00Z', 1);
 INSERT INTO offers (edition, start_Moment, end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITHOUT TIME ZONE '2020-12-20T03:00:00Z', TIMESTAMP WITHOUT TIME ZONE '2021-12-20T03:00:00Z', 1);
+
+INSERT INTO resources (title, description, position, img_Uri, type, offer_id) VALUES ('Trilha HTML', 'Trilha principal do curso', 1, 'https://blog.coursify.me/wp-content/uploads/2018/08/plan-your-online-course.jpg', 1, 1);
+INSERT INTO resources (title, description, position, img_Uri, type, offer_id) VALUES ('Forum', 'Tire suas dúvidas', 2, 'https://blog.coursify.me/wp-content/uploads/2018/08/plan-your-online-course.jpg', 2, 1);
+INSERT INTO resources (title, description, position, img_Uri, type, offer_id) VALUES ('Lives', 'Lives exclusivas para a turma', 3, 'https://blog.coursify.me/wp-content/uploads/2018/08/plan-your-online-course.jpg', 0, 1);
