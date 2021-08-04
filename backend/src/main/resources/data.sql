@@ -28,3 +28,18 @@ INSERT INTO sections (title, description, position, img_Uri, resource_id, prereq
 
 INSERT INTO enrollments (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (1, 1, TIMESTAMP WITHOUT TIME ZONE '2020-11-20T13:00:00Z', null, true, false);
 INSERT INTO enrollments (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (2, 1, TIMESTAMP WITHOUT TIME ZONE '2020-11-20T12:30:00Z', null, true, false);
+
+INSERT INTO lessons (title, position, section_id) VALUES ('Aula 1 do capítulo 1', 1, 1);
+INSERT INTO contents (id, text_Content, video_Uri) VALUES (1, 'Material de apoio: topper', 'https://www.youtube.com/watch?v=jIa8R69pKh8&ab_channel=DevSuperior');
+
+INSERT INTO lessons (title, position, section_id) VALUES ('Aula 2 do capítulo 1', 2, 1);
+INSERT INTO contents (id, text_Content, video_Uri) VALUES (2, '', 'https://www.youtube.com/watch?v=jIa8R69pKh8&ab_channel=DevSuperior');
+
+INSERT INTO lessons (title, position, section_id) VALUES ('Aula 3 do capítulo 1', 3, 1);
+INSERT INTO contents (id, text_Content, video_Uri) VALUES (3, '', 'https://www.youtube.com/watch?v=jIa8R69pKh8&ab_channel=DevSuperior');
+
+INSERT INTO lessons (title, position, section_id) VALUES ('Tarefa do capítulo 1', 4, 1);
+INSERT INTO tasks (id, description, question_Count, approval_Count, weight, due_Date) VALUES (4, 'Fazer um trabalho esforçado e maneiro', 5, 4, 1.0, TIMESTAMP WITHOUT TIME ZONE '2021-11-25T13:00:00Z');
+
+INSERT INTO lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
+INSERT INTO lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
