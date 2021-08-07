@@ -28,6 +28,8 @@ public class Topic implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String title; 
+	
+	@Column(columnDefinition = "TEXT") // this way it accepts long texts
 	private String body;
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
